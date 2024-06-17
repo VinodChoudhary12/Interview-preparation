@@ -2,10 +2,15 @@
 Exception Handling
 ------------
 1) Explain the concept of chained exceptions in Java.
+
 Ans. -> one exception class/object will provide more information about exception class/object is called exception chaining
 
+
+
 2) What is the purpose of the NullPointerException in Java, and how can you prevent it?
-Ans. -> Null Pointer Exception is a kind of run time exception that is thrown when the java program attempts to use the object reference that that contains the null value.
+Ans. -> Null Pointer Exception is a kind of run time exception that is thrown ,
+when the java program attempts to use the object reference that that contains the null value.
+
 
 3) Explain the difference between Error and Exception in Java.
 Ans -> 	* Recovering from Error is not possible.	
@@ -20,14 +25,19 @@ Ans -> 	* Recovering from Error is not possible.
 		* They are defined in java.lang.Error package.	 
 		  They are defined in java.lang.Exception package
 		* Examples : java.lang.StackOverflowError, java.lang.OutOfMemoryError	
-		  Examples : Checked Exceptions : SQLException, IOException Unchecked Exceptions : ArrayIndexOutOfBoundException, NullPointerException, ArithmeticException.
+		  Examples : Checked Exceptions : SQLException, IOException Unchecked Exceptions : 
+		  ArrayIndexOutOfBoundException, NullPointerException, ArithmeticException.
 		  
 4) How does the throws clause impact method overriding in Java?
 
 5) Is it possible to throw checked exceptions from a static block?
-Ans. -> In Java, it is not possible to throw checked exceptions directly from a static block. The reason is that a static block is a part of a class's initialization process, and throwing checked exceptions from there could lead to unhandled exceptions at the class level
+Ans. -> In Java, it is not possible to throw checked exceptions directly from a static block. 
+The reason is that a static block is a part of a class's initialization process, 
+and throwing checked exceptions from there could lead to unhandled exceptions at the class level
 
-6) What is the difference between ClassNotFoundException and NoClassDefFoundError?
+
+
+6) *What is the difference between ClassNotFoundException and NoClassDefFoundError?*
 Ans. -> ClassNotFoundException occurs when you try to load a class at runtime using Class.forName() or loadClass() methods and requested classes are not found in classpath. Most of the time this exception will occur when you try to run an application without updating the classpath with JAR files.
 NoClassDefFoundError Now dwelling on the next exception that is NoClassDefFoundError occurs when the class was present during compile time and the program was compiled and linked successfully but the class was not present during runtime. It is an error that is derived from LinkageError. Linkage error occurs when a class has some dependencies on another class and the latter class changes after compilation of the former class.
 
